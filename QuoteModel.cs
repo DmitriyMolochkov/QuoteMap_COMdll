@@ -9,7 +9,7 @@ namespace QuoteMap
     public class QuoteModel : IQuoteModel
     {
         public string Symbol { get; }
-        public string Ticker => Regex.Split(Symbol, ":")[0];
+        public string Ticker => Regex.Split(Symbol, ":")[1];
         public double Price { get; }
         
         public QuoteModel(string symbol, double price)
