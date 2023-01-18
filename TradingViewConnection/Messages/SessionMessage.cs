@@ -24,7 +24,7 @@ namespace QuoteMap.TradingViewConnection.Messages
         public string Protocol { get; set; }
         
         [JsonProperty("javastudies")]
-        public string Javastudies { get; set; }
+        public string[] Javastudies { get; set; }
         
         [JsonProperty("auth_scheme_vsn")]
         public int AuthSchemeVsn { get; set; }
